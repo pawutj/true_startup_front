@@ -34,8 +34,40 @@ function ScatterComponent({ data }) {
         data={data}
         options={{
           scales: {
-            xAxes: [{ gridLines: { display: false } }],
-            yAxes: [{ gridLines: { display: false } }],
+            xAxes: [
+              {
+                scaleLabel: {
+                  display: true,
+                  labelString: "Cycle Time",
+                  fontColor: "#FFF",
+                },
+                gridLines: {
+                  color: "transparent",
+                  zeroLineWidth: 1,
+                  zeroLineColor: "#CACACA",
+                },
+                ticks: {
+                  beginAtZero: true,
+                },
+              },
+            ],
+            yAxes: [
+              {
+                scaleLabel: {
+                  display: true,
+                  labelString: "Cycle Time",
+                  fontColor: "#FFF",
+                },
+                gridLines: {
+                  color: "transparent",
+                  zeroLineWidth: 1,
+                  zeroLineColor: "#CACACA",
+                },
+                ticks: {
+                  beginAtZero: true,
+                },
+              },
+            ],
           },
           maintainAspectRatio: true,
           responsive: true,

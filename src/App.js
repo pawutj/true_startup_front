@@ -2,7 +2,7 @@ import logo from "./logo.svg";
 import "./App.css";
 import TestChart from "./TestChart";
 import ScatterComponent from "./ScatterComponent";
-
+import { useState } from "react";
 const color2 = "#2B3340";
 const data = {
   datasets: [
@@ -31,12 +31,13 @@ const data = {
 };
 
 function App() {
+  const [dataState, setDataState] = useState(data);
   return (
     <div className="App">
       <h1>test</h1>
-      <div style={{ backgroundColor: { color2 }, width: 400, height: 650 }}>
+      <div style={{ backgroundColor: "#2B3340", width: 400, height: 650 }}>
         {" "}
-        <ScatterComponent data={data} />
+        <ScatterComponent data={dataState} />
       </div>
     </div>
   );
