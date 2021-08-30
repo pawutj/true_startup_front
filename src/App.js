@@ -1,31 +1,31 @@
 import logo from "./logo.svg";
 import "./App.css";
 import TestChart from "./TestChart";
-import Scatter from "./Scatter";
+import ScatterComponent from "./ScatterComponent";
 
+const color2 = "#2B3340";
 const data = {
   datasets: [
     {
-      label: "Scatter Dataset",
       data: [
         {
-          x: -10,
-          y: 0,
+          x: 1,
+          y: 1,
         },
         {
-          x: 0,
-          y: 10,
+          x: 0.8,
+          y: 0.8,
         },
         {
-          x: 10,
-          y: 5,
+          x: 0.4,
+          y: 0.4,
         },
         {
-          x: 0.5,
-          y: 5.5,
+          x: 0.2,
+          y: 0.2,
         },
       ],
-      backgroundColor: "rgb(255, 99, 132)",
+      backgroundColor: ["red", "red", "green", "green"],
     },
   ],
 };
@@ -34,9 +34,9 @@ function App() {
   return (
     <div className="App">
       <h1>test</h1>
-      <div style={{ width: 500 }}>
+      <div style={{ backgroundColor: { color2 }, width: 400, height: 650 }}>
         {" "}
-        <Scatter data={data} />
+        <ScatterComponent data={data} />
       </div>
     </div>
   );

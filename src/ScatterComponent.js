@@ -1,10 +1,9 @@
 import React from "react";
 import { Bar, Scatter } from "react-chartjs-2";
 
-const data = {
+const dataMock = {
   datasets: [
     {
-      label: "Scatter Dataset",
       data: [
         {
           x: -10,
@@ -34,16 +33,15 @@ function ScatterComponent({ data }) {
       <Scatter
         data={data}
         options={{
-          title: {
-            display: true,
-            text: "Average Rainfall per month",
-            fontSize: 20,
+          scales: {
+            xAxes: [{ gridLines: { display: false } }],
+            yAxes: [{ gridLines: { display: false } }],
           },
-          legend: {
-            display: true,
-            position: "right",
-          },
+          maintainAspectRatio: true,
+          responsive: true,
         }}
+        width={460}
+        height={650}
       />
     </div>
   );
