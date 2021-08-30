@@ -7,6 +7,7 @@ import { useState } from "react";
 import CardComponent from "./CardComponent";
 import StatusCardComponent from "./StatusCardComponent";
 import iconimg1 from "./asset/iconimg1.svg";
+import YieldComponent from "./YieldComponent";
 const color2 = "#2B3340";
 const data = {
   datasets: [
@@ -44,6 +45,9 @@ function App() {
             {" "}
             <div style={{ backgroundColor: "#2B3340", borderRadius: "10px" }}>
               <BarComponent />
+            </div>
+            <div style={{ backgroundColor: "#2B3340", borderRadius: "10px" }}>
+              <YieldComponent />
             </div>
           </div>
           <div class="col-sm-4">
