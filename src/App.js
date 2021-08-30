@@ -2,6 +2,7 @@ import logo from "./logo.svg";
 import "./App.css";
 import TestChart from "./TestChart";
 import ScatterComponent from "./ScatterComponent";
+import BarComponent from "./BarComponent";
 import { useState } from "react";
 import CardComponent from "./CardComponent";
 const color2 = "#2B3340";
@@ -47,9 +48,13 @@ function App() {
 
         <div class="container">
           <div class="row">
-            <div class="col-sm-8"></div>
-            <div class="col-sm-4">
+            <div class="col-sm-8">
               {" "}
+              <div>
+                <BarComponent />
+              </div>
+            </div>
+            <div class="col-sm-4">
               <div
                 style={{ backgroundColor: "#2B3340", width: 400, height: 650 }}
               >
