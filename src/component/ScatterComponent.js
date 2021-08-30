@@ -78,7 +78,7 @@ function ScatterComponent({}) {
               {
                 scaleLabel: {
                   display: true,
-                  labelString: "Cycle Time",
+                  labelString: "STD Time",
                   fontColor: "#FFF",
                 },
                 gridLines: {

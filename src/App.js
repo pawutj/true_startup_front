@@ -22,8 +22,10 @@ function App() {
             <div style={{ backgroundColor: "#2B3340", borderRadius: "10px" }}>
               <YieldComponent />
             </div>
+            <div></div>
           </div>
           <div class="col-lg-4">
+            <p className="text-start text-white mb-0">{`STD Time & Current`}</p>
             <div style={{ backgroundColor: "#2B3340", borderRadius: "10px" }}>
               <ScatterComponent />
             </div>
