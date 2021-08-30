@@ -8,6 +8,7 @@ import StatusTable from "./StatusTable";
 import iconimg1 from "./asset/iconimg1.svg"
 import TableRow from "./StatusTableRow"
 import tablecon1 from "./asset/tableIcon1.svg"
+import StatusCardComponent from "./StatusCardComponent";
 const color2 = "#2B3340";
 const data = {
   datasets: [
@@ -52,10 +53,12 @@ function App() {
         <div class="container">
           <div class="row">
             <div class="col-sm-8">
-              <StatusTable >
+              {/* <StatusTable >
                 <TableRow icon={tablecon1} found="พบการไม่ใส่หน้ากากอนามัยขณะทำงาน" status="status" time="13.27 PM" date="July 21,2021"> </TableRow>
                 <TableRow icon={tablecon1} found="พบการไม่ใส่หน้ากากอนามัยขณะทำงาน" status="status" time="13.27 PM" date="July 21,2021"> </TableRow>
-              </StatusTable>
+              </StatusTable> */}
+              <StatusCardComponent Logo={tablecon1} h1txt="8 Hours" percent="4.07%" color="g"></StatusCardComponent>
+              
                 
 
             </div>
