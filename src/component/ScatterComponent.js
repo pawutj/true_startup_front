@@ -24,6 +24,7 @@ const data = {
           y: 0.2,
         },
       ],
+
       backgroundColor: "red",
     },
   ],
@@ -43,10 +44,7 @@ const createDataChart = (data) => {
   const zipData = zip(_x, _y);
   return {
     datasets: [
-      {
-        data: zipData,
-        backgroundColor: "red",
-      },
+      { label: "std / current", data: zipData, backgroundColor: "red" },
     ],
   };
 };
