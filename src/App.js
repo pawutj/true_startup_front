@@ -4,6 +4,8 @@ import TestChart from "./TestChart";
 import ScatterComponent from "./ScatterComponent";
 import { useState } from "react";
 import CardComponent from "./CardComponent";
+import StatusCardComponent from "./StatusCardComponent";
+import iconimg1 from "./asset/iconimg1.svg"
 const color2 = "#2B3340";
 const data = {
   datasets: [
@@ -47,7 +49,11 @@ function App() {
 
         <div class="container">
           <div class="row">
-            <div class="col-sm-8"></div>
+            <div class="col-sm-8">
+              <StatusCardComponent Logo={iconimg1} color="r" h1txt="8 Hours" percent="4.02%"/>
+                
+
+            </div>
             <div class="col-sm-4">
               {" "}
               <div

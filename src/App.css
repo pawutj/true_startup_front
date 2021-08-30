@@ -36,3 +36,32 @@
     transform: rotate(360deg);
   }
 }
+
+
+
+.cardBG{
+  background-color: rgb(73, 81, 94);
+  color: white;
+  border-radius: 10px;
+
+}
+
+.statusCard{
+  height: 200px;
+}
+.statusCardItem{
+  margin: auto !important;
+  align-items: center;
+}
+.statusCardItem h1{
+  padding-top: 30px;
+}
+.colorGreen{
+  color: green;
+}
+.colorRed{
+  color: red;
+}
+.subtxt{
+  color:rgb(111, 118, 121)
+}
