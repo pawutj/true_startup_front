@@ -20,7 +20,12 @@ const data = {
 function BarComponent({}) {
   return (
     <div>
-      <Bar data={data} />
+      <Bar
+        data={data}
+        options={{ maintainAspectRatio: true, responsive: true }}
+        width={1000}
+        height={250}
+      />
     </div>
   );
 }
