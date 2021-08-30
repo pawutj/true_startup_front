@@ -5,6 +5,8 @@ import ScatterComponent from "./ScatterComponent";
 import BarComponent from "./BarComponent";
 import { useState } from "react";
 import CardComponent from "./CardComponent";
+import StatusCardComponent from "./StatusCardComponent";
+import iconimg1 from "./asset/iconimg1.svg";
 const color2 = "#2B3340";
 const data = {
   datasets: [
@@ -36,28 +38,17 @@ function App() {
   const [dataState, setDataState] = useState(data);
   return (
     <div className="App">
-      <div className="container">
-        {/* <div>
-          <h1>test</h1>
-          <div style={{ backgroundColor: "#2B3340", width: 400, height: 650 }}>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-8">
             {" "}
-            <ScatterComponent data={dataState} />
-          </div>
-          <CardComponent />
-        </div> */}
-
-        <div class="container">
-          <div class="row">
-            <div class="col-sm-8">
-              {" "}
-              <div style={{ backgroundColor: "#2B3340", borderRadius: "10px" }}>
-                <BarComponent />
-              </div>
+            <div style={{ backgroundColor: "#2B3340", borderRadius: "10px" }}>
+              <BarComponent />
             </div>
-            <div class="col-sm-4">
-              <div style={{ backgroundColor: "#2B3340", borderRadius: "10px" }}>
-                <ScatterComponent data={dataState} />
-              </div>
+          </div>
+          <div class="col-sm-4">
+            <div style={{ backgroundColor: "#2B3340", borderRadius: "10px" }}>
+              <ScatterComponent data={dataState} />
             </div>
           </div>
         </div>
