@@ -23,7 +23,7 @@ function App() {
             <div style={{ backgroundColor: "#2B3340", borderRadius: "10px" }}>
               <YieldComponent />
             </div>
-            <div className="mt-5">
+            <div className="mt-5 mb-5">
               <StatusTable>
                 <TableRow
                   icon={""}
