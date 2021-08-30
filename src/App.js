@@ -50,12 +50,12 @@ function App() {
           <div class="row">
             <div class="col-sm-8">
               {" "}
-              <div style={{ backgroundColor: "#2B3340" }}>
+              <div style={{ backgroundColor: "#2B3340", borderRadius: "10px" }}>
                 <BarComponent />
               </div>
             </div>
             <div class="col-sm-4">
-              <div style={{ backgroundColor: "#2B3340" }}>
+              <div style={{ backgroundColor: "#2B3340", borderRadius: "10px" }}>
                 <ScatterComponent data={dataState} />
               </div>
             </div>
