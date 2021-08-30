@@ -6,18 +6,18 @@ const data = {
   labels: ["01", "02", "03", "04", "05"],
   datasets: [
     {
-      label: "Dataset 1",
+      label: "Now",
       data: [1, 2, 3, 4, 5],
       backgroundColor: "#E786D7",
     },
     {
-      label: "Dataset 2",
+      label: "History",
       data: [1, 2, 1, 4, 2],
       backgroundColor: "#7F7FD5",
     },
   ],
 };
-function BarComponent({}) {
+function YieldComponent({}) {
   return (
     <div>
       <Bar
@@ -30,4 +30,4 @@ function BarComponent({}) {
   );
 }
 
-export default BarComponent;
+export default YieldComponent;
