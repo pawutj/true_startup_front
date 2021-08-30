@@ -39,7 +39,7 @@ function App() {
     <div className="App" style={{ backgroundColor: colors.background }}>
       <div class="container">
         <div class="row">
-          <div class="col-sm-8">
+          <div class="col-lg-8">
             <p className="text-start text-white mb-0">PRODUCTIVITY</p>
             <div style={{ backgroundColor: "#2B3340", borderRadius: "10px" }}>
               <BarComponent />
@@ -49,7 +49,7 @@ function App() {
               <YieldComponent />
             </div>
           </div>
-          <div class="col-sm-4">
+          <div class="col-lg-4">
             <div style={{ backgroundColor: "#2B3340", borderRadius: "10px" }}>
               <ScatterComponent data={dataState} />
             </div>
