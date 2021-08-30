@@ -15,15 +15,15 @@ function App() {
       <div class="container">
         <div class="row">
           <div class="col-lg-8">
-            <p className="text-start text-white mb-0">PRODUCTIVITY</p>
+            <p className="text-start text-white mb-0 mt-3">PRODUCTIVITY</p>
             <div style={{ backgroundColor: "#2B3340", borderRadius: "10px" }}>
               <BarComponent />
             </div>
-            <p className="text-start text-white mb-0">YIELD</p>
+            <p className="text-start text-white mb-0 mt-3">YIELD</p>
             <div style={{ backgroundColor: "#2B3340", borderRadius: "10px" }}>
               <YieldComponent />
             </div>
-            <div>
+            <div className="mt-5">
               <StatusTable>
                 <TableRow
                   icon={""}
@@ -48,7 +48,7 @@ function App() {
               </StatusTable>
             </div>
           </div>
-          <div class="col-lg-4">
+          <div class="col-lg-4 mt-3">
             <p className="text-start text-white mb-0">{`STD Time & Current`}</p>
             <div style={{ backgroundColor: "#2B3340", borderRadius: "10px" }}>
               <ScatterComponent />
