@@ -30,6 +30,12 @@ function YieldComponent({}) {
       <Bar
         data={data}
         options={{
+          legend: {
+            display: true,
+            labels: {
+              fontColor: "white",
+            },
+          },
           scales: {
             xAxes: [
               {
@@ -45,6 +51,7 @@ function YieldComponent({}) {
                 },
                 ticks: {
                   beginAtZero: true,
+                  fontColor: "white",
                 },
               },
             ],
@@ -62,6 +69,7 @@ function YieldComponent({}) {
                 },
                 ticks: {
                   beginAtZero: true,
+                  fontColor: "white",
                 },
               },
             ],

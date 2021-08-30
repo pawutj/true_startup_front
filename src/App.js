@@ -33,16 +33,16 @@ function App() {
                   date="July 21,2021"
                 ></TableRow>
                 <TableRow
-                  found="พบการไม่ใส่หน้ากากอนามัยขณะทำงาน"
+                  found="พบการแอบคุยโทรศัพท์"
                   status="status"
-                  time="13.27 PM"
+                  time="13.00 PM"
                   date="July 21,2021"
                 ></TableRow>
 
                 <TableRow
-                  found="พบการไม่ใส่หน้ากากอนามัยขณะทำงาน"
+                  found="พบการแอบกินอาหาร"
                   status="status"
-                  time="13.27 PM"
+                  time="11.30 AM"
                   date="July 21,2021"
                 ></TableRow>
               </StatusTable>

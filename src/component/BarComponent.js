@@ -45,6 +45,12 @@ function BarComponent({}) {
       <Bar
         data={data}
         options={{
+          legend: {
+            display: true,
+            labels: {
+              fontColor: "white",
+            },
+          },
           scales: {
             xAxes: [
               {
@@ -60,6 +66,7 @@ function BarComponent({}) {
                 },
                 ticks: {
                   beginAtZero: true,
+                  fontColor: "white",
                 },
               },
             ],
@@ -77,6 +84,7 @@ function BarComponent({}) {
                 },
                 ticks: {
                   beginAtZero: true,
+                  fontColor: "white",
                 },
               },
             ],
