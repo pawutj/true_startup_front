@@ -3,8 +3,7 @@ import { Bar, Scatter } from "react-chartjs-2";
 import { Utils } from "chart.js";
 import dataJson from "../data.json";
 
-const getArrayFromObj = (obj) =>
-  Object.keys(obj).map((key) => [Number(key), obj[key]]);
+const getArrayFromObj = (obj) => Object.keys(obj).map((key) => obj[key]);
 
 const createDataChart = (data) => {
   return {
