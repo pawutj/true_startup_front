@@ -32,6 +32,7 @@ function App() {
                     h1txt="8 HOUR"
                     percent="4.02%"
                     color="g"
+                    Logo="./asset/iconimg1.svg"
                   />
                 </div>
                 <div className="col m-2">
@@ -40,12 +41,17 @@ function App() {
                     h1txt="6 HOUR"
                     percent="+3.96%"
                     color="g"
+                    Logo="./asset/iconimg2.svg"
                   />
                 </div>
                 <div className="col m-2">
                   <p className="text-start text-white mb-0 mt-2">DELEY</p>
 
-                  <StatusCardComponent h1txt="2 HOUR" percent="+2.84%" />
+                  <StatusCardComponent
+                    h1txt="2 HOUR"
+                    percent="+2.84%"
+                    Logo="./asset/iconimg3.svg"
+                  />
                 </div>
               </div>
             </div>
@@ -57,12 +63,14 @@ function App() {
                   status="status"
                   time="13.27 PM"
                   date="July 21,2021"
+                  icon="./asset/tableIcon1.svg"
                 ></TableRow>
                 <TableRow
                   found="พบการแอบคุยโทรศัพท์"
                   status="status"
                   time="13.00 PM"
                   date="July 21,2021"
+                  icon="./asset/tableIcon2.svg"
                 ></TableRow>
 
                 <TableRow
@@ -70,6 +78,7 @@ function App() {
                   status="status"
                   time="11.30 AM"
                   date="July 21,2021"
+                  icon="./asset/tableIcon3.svg"
                 ></TableRow>
               </StatusTable>
             </div>
