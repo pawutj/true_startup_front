@@ -8,6 +8,7 @@ import YieldComponent from "./component/YieldComponent";
 import StatusTable from "./component/StatusTable";
 import TableRow from "./component/StatusTableRow";
 import { colors } from "./colors";
+import StatusCardComponent from "./component/StatusCardComponent";
 // const tablecon1 = "/asset/tableIcon1.svg";
 function App() {
   return (
@@ -22,6 +23,31 @@ function App() {
             <p className="text-start text-white mb-0 mt-3">YIELD</p>
             <div style={{ backgroundColor: "#2B3340", borderRadius: "10px" }}>
               <YieldComponent />
+            </div>
+            <div>
+              <div className="row">
+                <div className="col m-2">
+                  <p className="text-start text-white mb-0 mt-2">TOTAL</p>
+                  <StatusCardComponent
+                    h1txt="8 HOUR"
+                    percent="4.02%"
+                    color="g"
+                  />
+                </div>
+                <div className="col m-2">
+                  <p className="text-start text-white mb-0 mt-2">ON TIME</p>
+                  <StatusCardComponent
+                    h1txt="6 HOUR"
+                    percent="+3.96%"
+                    color="g"
+                  />
+                </div>
+                <div className="col m-2">
+                  <p className="text-start text-white mb-0 mt-2">DELEY</p>
+
+                  <StatusCardComponent h1txt="2 HOUR" percent="+2.84%" />
+                </div>
+              </div>
             </div>
             <div className="mt-5 mb-5">
               <StatusTable>

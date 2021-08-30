@@ -1,10 +1,8 @@
 import "../App.css";
 import { useState } from "react";
-import Logo from "./logo.svg";
-
 function StatusCardComponent({ Logo, h1txt, color, percent }) {
   return (
-    <div className="cardBG statusCard row">
+    <div className="cardBG statusCard row" style={{ height: 130 }}>
       <div class="col-sm-3 statusCardItem">
         <img src={Logo} />
       </div>
