@@ -1,28 +1,75 @@
 import React from "react";
 import { Bar, Scatter } from "react-chartjs-2";
 import { Utils } from "chart.js";
+import dataJson from "../data.json";
 
-const data = {
-  labels: ["01", "02", "03", "04", "05"],
-  datasets: [
-    {
-      label: "Now",
-      data: [1, 2, 3, 4, 5],
-      backgroundColor: "#E786D7",
-    },
-    {
-      label: "History",
-      data: [1, 2, 1, 4, 2],
-      backgroundColor: "#7F7FD5",
-    },
-  ],
+const getArrayFromObj = (obj) =>
+  Object.keys(obj).map((key) => [Number(key), obj[key]]);
+
+const createDataChart = (data) => {
+  return {
+    labels: getArrayFromObj(dataJson.time),
+    datasets: [
+      {
+        label: "Now",
+        data: getArrayFromObj(dataJson.Yield),
+        backgroundColor: "#E786D7",
+      },
+      {
+        label: "History",
+        data: getArrayFromObj(dataJson.ExpectedYield),
+        backgroundColor: "#7F7FD5",
+      },
+    ],
+  };
 };
+
 function YieldComponent({}) {
+  const data = createDataChart(dataJson);
   return (
     <div>
       <Bar
         data={data}
-        options={{ maintainAspectRatio: true, responsive: true }}
+        options={{
+          scales: {
+            xAxes: [
+              {
+                scaleLabel: {
+                  display: false,
+                  labelString: "Cycle Time",
+                  fontColor: "#FFF",
+                },
+                gridLines: {
+                  color: "transparent",
+                  zeroLineWidth: 1,
+                  zeroLineColor: "#CACACA",
+                },
+                ticks: {
+                  beginAtZero: true,
+                },
+              },
+            ],
+            yAxes: [
+              {
+                scaleLabel: {
+                  display: true,
+                  labelString: "Yield",
+                  fontColor: "#FFF",
+                },
+                gridLines: {
+                  color: "transparent",
+                  zeroLineWidth: 1,
+                  zeroLineColor: "#CACACA",
+                },
+                ticks: {
+                  beginAtZero: true,
+                },
+              },
+            ],
+          },
+          maintainAspectRatio: true,
+          responsive: true,
+        }}
         width={1000}
         height={250}
       />

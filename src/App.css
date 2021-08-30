@@ -1,4 +1,7 @@
 .App {
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: lighter;
   text-align: center;
 }
 
@@ -37,47 +40,44 @@
   }
 }
 
-
-
-.cardBG{
+.cardBG {
   background-color: rgb(73, 81, 94);
   color: white;
   border-radius: 10px;
-
 }
 
-.statusCard{
+.statusCard {
   height: 200px;
 }
-.statusCardItem{
+.statusCardItem {
   margin: auto !important;
   align-items: center;
 }
-.statusCardItem h1{
+.statusCardItem h1 {
   padding-top: 30px;
 }
-.colorGreen{
+.colorGreen {
   color: green;
 }
-.colorRed{
+.colorRed {
   color: red;
 }
-.subtxt{
-  color:rgb(111, 118, 121)
+.subtxt {
+  color: rgb(111, 118, 121);
 }
 
-.tableHeader{
-  border-bottom: 1px solid white!important;
+.tableHeader {
+  border-bottom: 1px solid white !important;
   text-align: left;
-  
 }
-.padding15{
+.padding15 {
   padding: 15px 0 !important;
 }
-.spaceBTW{
+.spaceBTW {
   display: flex;
   justify-content: space-between;
 }
 
-
-
+.text-white {
+  color: white;
+}

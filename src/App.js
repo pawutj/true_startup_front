@@ -4,13 +4,9 @@ import TestChart from "./TestChart";
 import ScatterComponent from "./component/ScatterComponent";
 import BarComponent from "./component/BarComponent";
 import { useState } from "react";
-import CardComponent from "./CardComponent";
-import StatusTable from "./StatusTable";
-import iconimg1 from "./asset/iconimg1.svg";
-import TableRow from "./StatusTableRow";
-import tablecon1 from "./asset/tableIcon1.svg";
-import StatusCardComponent from "./StatusCardComponent";
-const color2 = "#2B3340";
+import YieldComponent from "./component/YieldComponent";
+
+import { colors } from "./colors";
 const data = {
   datasets: [
     {
@@ -40,15 +36,15 @@ const data = {
 function App() {
   const [dataState, setDataState] = useState(data);
   return (
-    <div className="App">
+    <div className="App" style={{ backgroundColor: colors.background }}>
       <div class="container">
         <div class="row">
           <div class="col-sm-8">
-            <h4 className="text-start">PRODUCTIVITY</h4>
+            <p className="text-start text-white mb-0">PRODUCTIVITY</p>
             <div style={{ backgroundColor: "#2B3340", borderRadius: "10px" }}>
               <BarComponent />
             </div>
-            <h4 className="text-start">YIELD</h4>
+            <p className="text-start text-white mb-0">YIELD</p>
             <div style={{ backgroundColor: "#2B3340", borderRadius: "10px" }}>
               <YieldComponent />
             </div>
