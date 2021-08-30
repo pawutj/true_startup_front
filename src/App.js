@@ -3,6 +3,7 @@ import "./App.css";
 import TestChart from "./TestChart";
 import ScatterComponent from "./ScatterComponent";
 import { useState } from "react";
+import CardComponent from "./CardComponent";
 const color2 = "#2B3340";
 const data = {
   datasets: [
@@ -34,10 +35,29 @@ function App() {
   const [dataState, setDataState] = useState(data);
   return (
     <div className="App">
-      <h1>test</h1>
-      <div style={{ backgroundColor: "#2B3340", width: 400, height: 650 }}>
-        {" "}
-        <ScatterComponent data={dataState} />
+      <div className="container">
+        {/* <div>
+          <h1>test</h1>
+          <div style={{ backgroundColor: "#2B3340", width: 400, height: 650 }}>
+            {" "}
+            <ScatterComponent data={dataState} />
+          </div>
+          <CardComponent />
+        </div> */}
+
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-8"></div>
+            <div class="col-sm-4">
+              {" "}
+              <div
+                style={{ backgroundColor: "#2B3340", width: 400, height: 650 }}
+              >
+                <ScatterComponent data={dataState} />
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );
