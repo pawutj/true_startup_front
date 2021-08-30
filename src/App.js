@@ -4,10 +4,12 @@ import TestChart from "./TestChart";
 import ScatterComponent from "./component/ScatterComponent";
 import BarComponent from "./component/BarComponent";
 import { useState } from "react";
-import CardComponent from "./component/CardComponent";
-import StatusCardComponent from "./StatusCardComponent";
+import CardComponent from "./CardComponent";
+import StatusTable from "./StatusTable";
 import iconimg1 from "./asset/iconimg1.svg";
-import YieldComponent from "./component/YieldComponent";
+import TableRow from "./StatusTableRow";
+import tablecon1 from "./asset/tableIcon1.svg";
+import StatusCardComponent from "./StatusCardComponent";
 const color2 = "#2B3340";
 const data = {
   datasets: [
