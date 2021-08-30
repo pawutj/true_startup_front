@@ -65,3 +65,19 @@
 .subtxt{
   color:rgb(111, 118, 121)
 }
+
+.tableHeader{
+  border-bottom: 1px solid white!important;
+  text-align: left;
+  
+}
+.padding15{
+  padding: 15px 0 !important;
+}
+.spaceBTW{
+  display: flex;
+  justify-content: space-between;
+}
+
+
+
