@@ -13,9 +13,16 @@ import StatusCardComponent from "./component/StatusCardComponent";
 function App() {
   return (
     <div className="App" style={{ backgroundColor: colors.background }}>
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-8">
+      <div className="container">
+        <div style={{ color: "white" }} className="p-3">
+          <span className="p-2">LAST MONTH</span>
+          <span className="p-2" style={{ color: "#00CEC9" }}>
+            LAST WEEK
+          </span>
+          <span className="p-2">YESTERDAY</span>
+        </div>
+        <div className="row">
+          <div className="col-lg-8">
             <p className="text-start text-white mb-0 mt-3">PRODUCTIVITY</p>
             <div style={{ backgroundColor: "#2B3340", borderRadius: "10px" }}>
               <BarComponent />
