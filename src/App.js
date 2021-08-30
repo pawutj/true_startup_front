@@ -1,13 +1,13 @@
 import logo from "./logo.svg";
 import "./App.css";
 import TestChart from "./TestChart";
-import ScatterComponent from "./ScatterComponent";
-import BarComponent from "./BarComponent";
+import ScatterComponent from "./component/ScatterComponent";
+import BarComponent from "./component/BarComponent";
 import { useState } from "react";
-import CardComponent from "./CardComponent";
+import CardComponent from "./component/CardComponent";
 import StatusCardComponent from "./StatusCardComponent";
 import iconimg1 from "./asset/iconimg1.svg";
-import YieldComponent from "./YieldComponent";
+import YieldComponent from "./component/YieldComponent";
 const color2 = "#2B3340";
 const data = {
   datasets: [
@@ -42,10 +42,11 @@ function App() {
       <div class="container">
         <div class="row">
           <div class="col-sm-8">
-            {" "}
+            <h4 className="text-start">PRODUCTIVITY</h4>
             <div style={{ backgroundColor: "#2B3340", borderRadius: "10px" }}>
               <BarComponent />
             </div>
+            <h4 className="text-start">YIELD</h4>
             <div style={{ backgroundColor: "#2B3340", borderRadius: "10px" }}>
               <YieldComponent />
             </div>
