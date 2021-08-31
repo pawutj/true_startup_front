@@ -18,10 +18,11 @@ function App() {
       <div className="container">
         <div style={{ color: "white" }} className="p-3">
           <span className="p-2">LAST MONTH</span>
-          <span className="p-2" style={{ color: "#00CEC9" }}>
-            LAST WEEK
-          </span>
+          <span className="p-2">LAST WEEK</span>
           <span className="p-2">YESTERDAY</span>
+          <span className="p-2" style={{ color: "#00CEC9" }}>
+            TODAY
+          </span>
         </div>
         <div className="row">
           <div className="col-lg-8">
@@ -36,28 +37,28 @@ function App() {
             <div>
               <div className="row">
                 <div className="col m-2">
-                  <p className="text-start text-white mb-0 mt-2">TOTAL</p>
+                  <p className="text-start text-white mb-0 mt-2">ON TIME</p>
                   <StatusCardComponent
-                    h1txt="8 HOUR"
+                    h1txt="3.91 HOUR"
                     percent="4.02%"
                     color="g"
                     Logo="./asset/iconimg1.svg"
                   />
                 </div>
                 <div className="col m-2">
-                  <p className="text-start text-white mb-0 mt-2">ON TIME</p>
+                  <p className="text-start text-white mb-0 mt-2">BREAK</p>
                   <StatusCardComponent
-                    h1txt="6 HOUR"
+                    h1txt="1.56 HOUR"
                     percent="+3.96%"
                     color="g"
                     Logo="./asset/iconimg2.svg"
                   />
                 </div>
                 <div className="col m-2">
-                  <p className="text-start text-white mb-0 mt-2">DELEY</p>
+                  <p className="text-start text-white mb-0 mt-2">TIME</p>
 
                   <StatusCardComponent
-                    h1txt="2 HOUR"
+                    h1txt="3.91 HOUR"
                     percent="+2.84%"
                     Logo="./asset/iconimg3.svg"
                   />
