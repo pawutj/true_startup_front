@@ -1,7 +1,7 @@
 import React from "react";
 import { Bar, Scatter } from "react-chartjs-2";
 import scatterData from "../scatterData.json";
-
+import scatterData2 from "../scatterData3.json";
 const getArrayFromObj = (obj) => Object.keys(obj).map((key) => obj[key]);
 const data = {
   datasets: [
@@ -43,25 +43,37 @@ const createDataChart = (data) => {
   const _y = getArrayFromObj(scatterData.cumulative_stdtime);
   const zipData = zip(_x, _y);
   return {
-    datasets: [
-      { label: "std / current", data: zipData, backgroundColor: "red" },
-    ],
+    datasets: [{ label: "Cycle Time", data: zipData, backgroundColor: "red" }],
+  };
+};
+
+const createDataChart2 = (data) => {
+  //const _x = data.TimeStamp;
+  const _x = getArrayFromObj(data.value);
+  const _y = getArrayFromObj(data.cycletime_check);
+
+  const zipData = zip(_x, _y);
+  return {
+    datasets: [{ label: "Cycle Time", data: zipData, backgroundColor: "red" }],
   };
 };
 
 function ScatterComponent({}) {
   const data = createDataChart(scatterData);
+  const data2 = createDataChart2(scatterData2);
+  console.log(data2);
+  console.log(scatterData2);
   return (
     <div>
       <Scatter
-        data={data}
+        data={data2}
         options={{
           scales: {
             xAxes: [
               {
                 scaleLabel: {
                   display: true,
-                  labelString: "Cycle Time",
+                  labelString: "Time",
                   fontColor: "#FFF",
                 },
                 gridLines: {
@@ -78,7 +90,7 @@ function ScatterComponent({}) {
               {
                 scaleLabel: {
                   display: true,
-                  labelString: "STD Time",
+                  labelString: "Cycle Time",
                   fontColor: "#FFF",
                 },
                 gridLines: {

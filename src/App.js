@@ -86,7 +86,7 @@ function App() {
             </div>
           </div>
           <div class="col-lg-4 mt-3">
-            <p className="text-start text-white mb-0">{`STD Time & Current`}</p>
+            <p className="text-start text-white mb-0">{`Cycle Time`}</p>
             <div style={{ backgroundColor: "#2B3340", borderRadius: "10px" }}>
               <ScatterComponent />
             </div>
