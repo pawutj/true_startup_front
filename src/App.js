@@ -12,6 +12,7 @@ import StatusCardComponent from "./component/StatusCardComponent";
 import VideoComponent from "./component/VideoComponent";
 // const tablecon1 = "/asset/tableIcon1.svg";
 function App() {
+  const [video, setVideo] = useState("");
   return (
     <div className="App" style={{ backgroundColor: colors.background }}>
       <div className="container">
@@ -70,12 +71,16 @@ function App() {
                   time="13.27 PM"
                   date="July 21,2021"
                   icon="./asset/walking.png"
+                  setVideo={setVideo}
+                  video="./asset/out.mp4"
                 ></TableRow>
                 <TableRow
                   found="พบการแอบคุยโทรศัพท์"
                   time="13.00 PM"
                   date="July 21,2021"
                   icon="./asset/tableIcon2.svg"
+                  setVideo={setVideo}
+                  video="./asset/phone.mp4"
                 ></TableRow>
               </StatusTable>
             </div>
@@ -87,7 +92,7 @@ function App() {
             </div>
 
             <div>
-              <VideoComponent />
+              <VideoComponent src={video} />
             </div>
           </div>
         </div>
