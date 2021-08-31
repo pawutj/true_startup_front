@@ -91,7 +91,7 @@ function App() {
               <ScatterComponent />
             </div>
 
-            <div>
+            <div className="mt-5">
               <VideoComponent src={video} />
             </div>
           </div>
