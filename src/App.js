@@ -14,7 +14,10 @@ import VideoComponent from "./component/VideoComponent";
 function App() {
   const [video, setVideo] = useState("");
   return (
-    <div className="App" style={{ backgroundColor: colors.background }}>
+    <div
+      className="App"
+      style={{ backgroundColor: colors.background, minHeight: "100vh" }}
+    >
       <div className="container">
         <div style={{ color: "white" }} className="p-3">
           <span className="p-2">LAST MONTH</span>
