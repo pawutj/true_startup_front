@@ -1,10 +1,12 @@
 import React from "react";
 import { Player } from "video-react";
 
-export default (props) => {
+export default ({ src = "" }) => {
   return (
-    <Player>
-      <source src="./asset/phone.mp4" />
-    </Player>
+    src && (
+      <Player>
+        <source src="./asset/phone.mp4" />
+      </Player>
+    )
   );
 };
