@@ -1,5 +1,5 @@
 import React from "react";
-import { Bar, Scatter } from "react-chartjs-2";
+import { Bar, Scatter, Line } from "react-chartjs-2";
 import { Utils } from "chart.js";
 import dataJson from "../data.json";
 const data = {
@@ -27,12 +27,14 @@ const createDataChart = (data) => {
       {
         label: "Now",
         data: getArrayFromObj(dataJson.Productivity),
-        backgroundColor: "#E786D7",
+        // backgroundColor: "#E786D7",
+        borderColor: "#E786D7",
       },
       {
         label: "History",
         data: getArrayFromObj(dataJson.ExpectedProductivity),
-        backgroundColor: "#7F7FD5",
+        //backgroundColor: "#7F7FD5",
+        borderColor: "#7F7FD5",
       },
     ],
   };
@@ -42,7 +44,7 @@ function BarComponent({}) {
   console.log(getArrayFromObj(dataJson.time));
   return (
     <div>
-      <Bar
+      <Line
         data={data}
         options={{
           legend: {
