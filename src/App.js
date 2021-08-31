@@ -9,6 +9,7 @@ import StatusTable from "./component/StatusTable";
 import TableRow from "./component/StatusTableRow";
 import { colors } from "./colors";
 import StatusCardComponent from "./component/StatusCardComponent";
+import VideoComponent from "./component/VideoComponent";
 // const tablecon1 = "/asset/tableIcon1.svg";
 function App() {
   return (
@@ -93,6 +94,10 @@ function App() {
             <p className="text-start text-white mb-0">{`STD Time & Current`}</p>
             <div style={{ backgroundColor: "#2B3340", borderRadius: "10px" }}>
               <ScatterComponent />
+            </div>
+
+            <div>
+              <VideoComponent />
             </div>
           </div>
         </div>
