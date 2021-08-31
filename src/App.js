@@ -66,26 +66,16 @@ function App() {
             <div className="mt-5 mb-5">
               <StatusTable>
                 <TableRow
-                  found="พบการไม่ใส่หน้ากากอนามัยขณะทำงาน"
-                  status="CHECK"
+                  found="พบการเดินออกนอกจุดทำงาน"
                   time="13.27 PM"
                   date="July 21,2021"
-                  icon="./asset/tableIcon1.svg"
+                  icon="./asset/walking.png"
                 ></TableRow>
                 <TableRow
                   found="พบการแอบคุยโทรศัพท์"
-                  status="CHECK"
                   time="13.00 PM"
                   date="July 21,2021"
                   icon="./asset/tableIcon2.svg"
-                ></TableRow>
-
-                <TableRow
-                  found="พบการแอบกินอาหาร"
-                  status="UNCHECK"
-                  time="11.30 AM"
-                  date="July 21,2021"
-                  icon="./asset/tableIcon3.svg"
                 ></TableRow>
               </StatusTable>
             </div>

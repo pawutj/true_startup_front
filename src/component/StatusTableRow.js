@@ -1,18 +1,14 @@
 import "../App.css";
 import { useState } from "react";
-
-function StatusTableRow({ icon, found, status, time, date }) {
+function StatusTableRow({ icon, found, time, date }) {
   return (
     <tr>
       <th scope="row">
-        <img src={icon} />
+        <img src={icon} width={32} />
       </th>
       <td className="padding15">{found}</td>
-      <td
-        className="padding15"
-        style={{ color: status == "CHECK" ? "green" : "red" }}
-      >
-        {status}
+      <td className="padding15">
+        <img src={"./asset/video.svg"} width={32} />
       </td>
       <td className="padding15">{time}</td>
       <td className="padding15" style={{ textAlign: "right" }}>
