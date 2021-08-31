@@ -51,10 +51,10 @@ const createDataChart2 = (data) => {
   //const _x = data.TimeStamp;
   const _x = getArrayFromObj(data.value);
   const _y = getArrayFromObj(data.cycletime_check);
-
+  const _c = getArrayFromObj(data.color);
   const zipData = zip(_x, _y);
   return {
-    datasets: [{ label: "Cycle Time", data: zipData, backgroundColor: "red" }],
+    datasets: [{ label: "Cycle Time", data: zipData, backgroundColor: _c }],
   };
 };
 
