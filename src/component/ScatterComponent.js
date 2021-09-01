@@ -43,7 +43,13 @@ const createDataChart = (data) => {
   const _y = getArrayFromObj(scatterData.cumulative_stdtime);
   const zipData = zip(_x, _y);
   return {
-    datasets: [{ label: "Cycle Time", data: zipData, backgroundColor: "red" }],
+    datasets: [
+      {
+        label: ["Cycle Time1", "Cycle Time2"],
+        data: zipData,
+        backgroundColor: "red",
+      },
+    ],
   };
 };
 
@@ -52,17 +58,32 @@ const createDataChart2 = (data) => {
   const _x = getArrayFromObj(data.value);
   const _y = getArrayFromObj(data.cycletime_check);
   const _c = getArrayFromObj(data.color);
+
   const zipData = zip(_x, _y);
+  const redData = zipData.filter((c) => c.y >= 3);
+  const greenData = zipData.filter((c) => c.y < 3);
+  console.log(redData);
+  // console.log(zipData);
   return {
-    datasets: [{ label: "Cycle Time", data: zipData, backgroundColor: _c }],
+    datasets: [
+      {
+        label: "On STD Time",
+        data: greenData,
+        backgroundColor: "green",
+      },
+      {
+        label: "Out STD Time",
+        data: redData,
+        backgroundColor: "red",
+      },
+    ],
   };
 };
 
 function ScatterComponent({}) {
   const data = createDataChart(scatterData);
   const data2 = createDataChart2(scatterData2);
-  console.log(data2);
-  console.log(scatterData2);
+
   return (
     <div>
       <Scatter

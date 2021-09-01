@@ -41,7 +41,7 @@ const createDataChart = (data) => {
 };
 function BarComponent({}) {
   const data = createDataChart(dataJson);
-  console.log(getArrayFromObj(dataJson.time));
+
   return (
     <div>
       <Line
