@@ -10,12 +10,12 @@ const createDataChart = (data) => {
     labels: getArrayFromObj(dataJson.time),
     datasets: [
       {
-        label: "Now",
+        label: "Actual",
         data: getArrayFromObj(dataJson.Yield),
         backgroundColor: "#E786D7",
       },
       {
-        label: "History",
+        label: "Ideal",
         data: getArrayFromObj(dataJson.ExpectedYield),
         backgroundColor: "#7F7FD5",
       },

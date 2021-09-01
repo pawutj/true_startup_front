@@ -69,6 +69,7 @@ function App() {
               </div>
             </div>
             <div className="mt-5 mb-5">
+              <p className="text-start text-white mb-0 mt-3">Loss Event</p>
               <StatusTable>
                 <TableRow
                   found="พบการเดินออกนอกจุดทำงาน"

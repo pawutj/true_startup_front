@@ -6,12 +6,12 @@ const data = {
   labels: ["01", "02", "03", "04", "05"],
   datasets: [
     {
-      label: "Now",
+      label: "Actual",
       data: [1, 2, 3, 4, 5],
       backgroundColor: "#E786D7",
     },
     {
-      label: "History",
+      label: "Ideal",
       data: [1, 2, 1, 4, 2],
       backgroundColor: "#7F7FD5",
     },
@@ -25,13 +25,13 @@ const createDataChart = (data) => {
     labels: getArrayFromObj(dataJson.time),
     datasets: [
       {
-        label: "Now",
+        label: "Actual",
         data: getArrayFromObj(dataJson.Productivity),
         // backgroundColor: "#E786D7",
         borderColor: "#E786D7",
       },
       {
-        label: "History",
+        label: "Ideal",
         data: getArrayFromObj(dataJson.ExpectedProductivity),
         //backgroundColor: "#7F7FD5",
         borderColor: "#7F7FD5",
