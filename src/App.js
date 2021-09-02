@@ -45,7 +45,7 @@ function App() {
                     h1txt="3.91 HOUR"
                     percent="4.02%"
                     color="g"
-                    Logo="./asset/iconimg1.svg"
+                    Logo="./asset/iconimg2.svg"
                   />
                 </div>
                 <div className="col m-2">
@@ -54,14 +54,14 @@ function App() {
                     h1txt="1.56 HOUR"
                     percent="+3.96%"
                     color="g"
-                    Logo="./asset/iconimg2.svg"
+                    Logo="./asset/iconimg1.svg"
                   />
                 </div>
                 <div className="col m-2">
-                  <p className="text-start text-white mb-0 mt-2">TIME</p>
+                  <p className="text-start text-white mb-0 mt-2">LOSS</p>
 
                   <StatusCardComponent
-                    h1txt="3.91 HOUR"
+                    h1txt="3.52 HOUR"
                     percent="+2.84%"
                     Logo="./asset/iconimg3.svg"
                   />
